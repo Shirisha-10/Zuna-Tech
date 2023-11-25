@@ -1,0 +1,46 @@
+{
+  "clinicData": [
+    {
+      "cName": "KIMS",
+      "phoneNumber": "9663322119",
+      "emailId": "kims.clinic@gmail.com",
+      "address": "hyderabad",
+      "id": 2
+    },
+    {
+      "cName": "NIMS",
+      "phoneNumber": "9941562378",
+      "emailId": "Nims.hospitals@gmail.com",
+      "address": "hyderabad",
+      "id": 3
+    },
+    {
+      "cName": "NIMS",
+      "phoneNumber": "9941562378",
+      "emailId": "Nims.hospitals@gmail.com",
+      "address": "hyderabad",
+      "id": 4
+    },
+    {
+      "cName": "Yashoda",
+      "phoneNumber": "9633225484",
+      "emailId": "yashoda.hospitals@gmail.com",
+      "address": "hyderabad",
+      "id": 5
+    },
+    {
+      "cName": "Kamneni",
+      "phoneNumber": "9692581471",
+      "emailId": "kameneni.hospitals@gmail.com",
+      "address": "hyderabad",
+      "id": 6
+    },
+    {
+      "cName": "Kamneni",
+      "phoneNumber": "9692581471",
+      "emailId": "kameneni.hospitals@gmail.com",
+      "address": "hyderabad",
+      "id": 7
+    }
+  ]
+}

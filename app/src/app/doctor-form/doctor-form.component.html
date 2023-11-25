@@ -1,0 +1,54 @@
+<h1>Doctor Form</h1>
+<form [formGroup]="doctorForm" (ngSubmit)="onSubmit()">
+
+
+    <mat-form-field>
+      <input matInput placeholder="Doctor Name" formControlName="dName">
+      <mat-error *ngIf="doctorForm.get('dName')?.hasError('required')">Doctor Name is required</mat-error>
+      <mat-error *ngIf="doctorForm.get('dName')?.hasError('maxlength')">Maximum length is 50 characters</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput type="number" placeholder="Age" formControlName="age">
+      <mat-error *ngIf="doctorForm.get('age')?.hasError('required')">Age is required</mat-error>
+      <mat-error *ngIf="doctorForm.get('age')?.hasError('min')">Minimum age is 18</mat-error>
+      <mat-error *ngIf="doctorForm.get('age')?.hasError('max')">Maximum age is 99</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput type="tel" placeholder="Phone Number" formControlName="phoneNumber">
+      <mat-error *ngIf="doctorForm.get('phoneNumber')?.hasError('required')">Phone Number is required</mat-error>
+      <mat-error *ngIf="doctorForm.get('phoneNumber')?.hasError('pattern')">Invalid phone number</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput type="email" placeholder="Email" formControlName="emailId">
+      <mat-error *ngIf="doctorForm.get('emailId')?.hasError('required')">Email is required</mat-error>
+      <mat-error *ngIf="doctorForm.get('emailId')?.hasError('email')">Invalid email address</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Specialization" formControlName="specialization">
+      <mat-error *ngIf="doctorForm.get('specialization')?.hasError('required')">Specialization is required</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput type="number" placeholder="Experience (in years)" formControlName="experience">
+      <mat-error *ngIf="doctorForm.get('experience')?.hasError('required')">Experience is required</mat-error>
+      <mat-error *ngIf="doctorForm.get('experience')?.hasError('min')">Minimum experience is 0</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+
+      <mat-label>Clinic Name</mat-label>
+      <mat-select formControlName="cName">
+        <mat-option *ngFor="let clinicName of clinicNames" [value]="clinicName">
+          {{ clinicName }}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="doctorForm.get('cName')?.hasError('required')">Clinic Name is required</mat-error>
+    </mat-form-field>
+  
+  <button mat-raised-button color="primary" type="submit">Submit</button>
+  
+  
+  </form>

@@ -1,0 +1,16 @@
+<div>
+    <h2>Doctor Details</h2>
+    <ul>
+   <li> <strong> Name:</strong> {{ doctorDetails.dName }}</li>
+   <li><strong> Age:</strong>{{ doctorDetails.age }}</li>
+   <li><strong>Number:</strong> {{ doctorDetails.phoneNumber }}</li>
+   <li> <strong>Email:</strong>  {{ doctorDetails.emailId }}</li>
+   <li>  <strong>Specialization:</strong> {{ doctorDetails.specialization }}</li>
+   <li><strong>Experience:</strong>{{ doctorDetails.experience }}</li>
+   <li> <strong>Clinics:</strong> 
+    <ul>
+      <li *ngFor="let cName of doctorDetails.cNames">{{ cName }}</li>
+    </ul>
+    </ul>
+  </div>
+  

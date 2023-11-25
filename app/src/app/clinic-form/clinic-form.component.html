@@ -1,0 +1,32 @@
+
+<h1>Clinic Form</h1>
+
+<form [formGroup]="clinicForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Clinic Name</mat-label>
+      <input matInput formControlName="cName" />
+      <mat-error *ngIf="clinicForm.get('cName')?.hasError('required')">Clinic Name is required</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Phone Number</mat-label>
+      <input matInput formControlName="phoneNumber" />
+      <mat-error *ngIf="clinicForm.get('phoneNumber')?.hasError('required')">Phone Number is required</mat-error>
+      <mat-error *ngIf="clinicForm.get('phoneNumber')?.hasError('pattern')">Invalid phone number</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Email ID</mat-label>
+      <input matInput formControlName="emailId" />
+      <mat-error *ngIf="clinicForm.get('emailId')?.hasError('required')">Email ID is required</mat-error>
+      <mat-error *ngIf="clinicForm.get('emailId')?.hasError('email')">Invalid email</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Address</mat-label>
+      <input matInput formControlName="address" />
+      <mat-error *ngIf="clinicForm.get('address')?.hasError('required')">Address is required</mat-error>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>

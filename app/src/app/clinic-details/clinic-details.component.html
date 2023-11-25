@@ -1,0 +1,24 @@
+<div *ngIf="clinicDetails">
+    <h2>Clinic Details</h2>
+    <ul>
+      <li><strong>Clinic Name:</strong> {{ clinicDetails.cName }}</li>
+      <li><strong>Location:</strong> {{ clinicDetails.address }}</li>
+      <li><strong>Number</strong> {{ clinicDetails.phoneNumber }}</li>
+      <li><strong>Email:</strong> {{ clinicDetails.emailId }}</li>
+  
+      <li *ngIf="clinicDetails.doctors.length > 0">
+        <strong>Associated Doctors</strong>
+        <ul>
+          <li *ngFor="let doctor of clinicDetails.doctors">
+            <strong>Doctor Name:</strong> {{ doctor.dName }}<br>
+            <hr>
+          </li>
+        </ul>
+      </li>
+      <li *ngIf="clinicDetails.doctors.length === 0">No associated doctors.</li>
+    </ul>
+  </div>
+  <div *ngIf="!clinicDetails">
+    <p>No clinic details found.</p>
+  </div>
+  

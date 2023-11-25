@@ -1,0 +1,16 @@
+div {
+    background-color: #258dd3; 
+    text-align: center;
+    /* padding: 20px; */
+    height: 70px;
+  }
+  h1{
+    padding-top: 2%;
+  }
+
+  .home{
+    position: absolute;
+    top:35px;
+    left: 25px;
+    color: azure;
+  }

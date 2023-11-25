@@ -1,0 +1,30 @@
+
+<div class="search-container">
+  <input type="text" class="search-input big-search-input" placeholder="Search" [(ngModel)]="searchString">
+  <img class="search-image" src="../../assets/search-ioc.jpg" (click)="onSearch()">
+</div>
+
+<div class="card-container">
+  <a mat-card class="clinic-card" [routerLink]="['/clinic-form']">
+    <img class="clinc-card" src="../../assets/clinic-img.jpg" alt="Clinic Image">
+    <mat-card-content>
+      <p>Click here to save clinic details</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Save Clinic</button>
+    </mat-card-actions>
+  </a>
+</div>
+
+
+<div class="doc">
+  <a mat-card class="doctor-card" [routerLink]="['/doctor-form']">
+    <img class="doc-img" mat-card-image src="../../assets/doc-img.jpg" alt="doctor Image">
+    <mat-card-content>
+      <p>Click here to save doctor details</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Save Doctor</button>
+    </mat-card-actions>
+  </a>
+</div>

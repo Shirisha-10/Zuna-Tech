@@ -1,0 +1,94 @@
+{
+  "doctorData": [
+    {
+      "dName": "sudheer kumar",
+      "age": 35,
+      "phoneNumber": "9922663311",
+      "emailId": "sudheer_dic@gmail.com",
+      "specialization": "dental",
+      "experience": 5,
+      "cName": "htmmm",
+      "id": 1
+    },
+    {
+      "dName": "manisha",
+      "age": 39,
+      "phoneNumber": "8694572215",
+      "emailId": "manisha.kims@gmail.com",
+      "specialization": "dental",
+      "experience": 3,
+      "cName": "KIMS",
+      "id": 2
+    },
+    {
+      "dName": "mohith",
+      "age": 35,
+      "phoneNumber": "8694572213",
+      "emailId": "mohith.kims@gmail.com",
+      "specialization": "dental",
+      "experience": 2,
+      "cName": "KIMS",
+      "id": 3
+    },
+    {
+      "dName": "sumith",
+      "age": 48,
+      "phoneNumber": "9914586958",
+      "emailId": "sumith@gmail.com",
+      "specialization": "dermatologist",
+      "experience": 5,
+      "cName": "KIMS",
+      "id": 4
+    },
+    {
+      "dName": "sumith",
+      "age": 48,
+      "phoneNumber": "9914586958",
+      "emailId": "sumith@gmail.com",
+      "specialization": "dermatologist",
+      "experience": 5,
+      "cName": "KIMS",
+      "id": 5
+    },
+    {
+      "dName": "ravi",
+      "age": 36,
+      "phoneNumber": "9634521782",
+      "emailId": "rahul.doc@gmail.com",
+      "specialization": "dermatologist",
+      "experience": 2,
+      "cName": "Yashoda",
+      "id": 6
+    },
+    {
+      "dName": "ravi",
+      "age": 36,
+      "phoneNumber": "9634521782",
+      "emailId": "rahul.doc@gmail.com",
+      "specialization": "dermatologist",
+      "experience": 2,
+      "cName": "KIMS",
+      "id": 7
+    },
+    {
+      "dName": "harshitha",
+      "age": 36,
+      "phoneNumber": "8529637417",
+      "emailId": "harshitha.kamneni@gmail.com",
+      "specialization": "dermatologist",
+      "experience": 3,
+      "cName": "Kamneni",
+      "id": 8
+    },
+    {
+      "dName": "harshitha",
+      "age": 36,
+      "phoneNumber": "8529637417",
+      "emailId": "harshitha.kamneni@gmail.com",
+      "specialization": "dermatologist",
+      "experience": 3,
+      "cName": "KIMS",
+      "id": 9
+    }
+  ]
+}
