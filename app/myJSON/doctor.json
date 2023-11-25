@@ -79,16 +79,7 @@
       "experience": 3,
       "cName": "Kamneni",
       "id": 8
-    },
-    {
-      "dName": "harshitha",
-      "age": 36,
-      "phoneNumber": "8529637417",
-      "emailId": "harshitha.kamneni@gmail.com",
-      "specialization": "dermatologist",
-      "experience": 3,
-      "cName": "KIMS",
-      "id": 9
     }
+    
   ]
 }
